@@ -1,0 +1,15 @@
+#!/data/data/com.termux/files/usr/bin/sh
+##
+##  Show message after install
+##
+
+if [ ! -f "/data/data/com.termux/files/usr/var/lib/termux-rootfs/termux-rootfs_configured" ]; then
+    echo
+    echo "You need to restart Termux application and"
+    echo "run command 'termux-setup-rootfs'."
+    echo
+else
+    echo
+    echo "You need to restart Termux application."
+    echo
+fi
